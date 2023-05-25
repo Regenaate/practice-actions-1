@@ -1,0 +1,16 @@
+name: Practice Phlow
+on: push
+jobs:
+    Lintesteploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Getting Code
+              uses: actions/checkout@v3
+            - name: Install npm
+              uses: actions/setup-node@v3
+            - name: Linting
+              run: npm lint
+            - name: Testing
+              run: npm test
+            - name: Deploying
+              run: echo "Deploying..."

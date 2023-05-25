@@ -1,0 +1,10 @@
+name: Output Event Deets
+on: issues
+jobs:
+    output-peasant:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Outputting Issue Details
+              run: echo ${{ github.event }}
+
+    
