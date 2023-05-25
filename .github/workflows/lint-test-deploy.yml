@@ -9,8 +9,8 @@ jobs:
             - name: Install npm
               uses: actions/setup-node@v3
             - name: Linting
-              run: npm lint
+              run: npm run lint
             - name: Testing
-              run: npm test
+              run: npm run test
             - name: Deploying
               run: echo "Deploying..."
